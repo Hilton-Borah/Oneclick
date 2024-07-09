@@ -105,10 +105,6 @@ body {
   align-items: center;
 }
 
-.taxProfessional {
-  width: 100px;
-}
-
 .availableOn1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1592,6 +1588,15 @@ body {
 .benefitImage {
   width: 90%;
 }
+.trustedby span {
+  font-weight: bold; 
+  font-size: 30px; 
+  color: #c80b5a
+}
+
+.taxProfessional {
+  width: 130px;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -1611,16 +1616,28 @@ body {
   
 
   .availableOn1 {
-    width: 90%;
-    font-size: 14px;
+    width: 85%;
+    font-size: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .availableOn2 {
-    font-size: 14px;
-    width: 90%;
-    margin-top: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    font-size: 10px;
+    width: 85%;
+    margin-top: 20px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .taxProfessional {
+    width: 200px;
+  }
+
+  .trustedby span {
+    font-size: 20px;
+  }
+  
+  .availableOn2 img{
+    width: 30px;
   }
 
   .appStore {
@@ -1631,12 +1648,9 @@ body {
     width: 120px;
   }
 
-  .availableOn2 img{
-    width: 80px;
-  }
 
   .trustedby {
-    font-size: 20px;
+    font-size: 14px;
    margin-top: 20px;
    /* margin-bottom: 20px; */
   } 
@@ -2182,8 +2196,14 @@ body {
 
   /* avalibale on -------------- */
 
+  .mainSliderSection {
+    margin-top: -50px;
+
+  }
+
   .mainSliderSectionfirst {
     margin-top: 20px;
+    background: transparent;
   }
 
   /* main slier section ------ */
@@ -2215,7 +2235,7 @@ body {
 
   .mainSliderSectionh1 {
     font-size: 30px;
-    /* margin-top: 150px; */
+    margin-top: 150px;
   }
 
   .mainSliderSectionSelect {
