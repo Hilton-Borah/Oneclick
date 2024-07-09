@@ -659,12 +659,12 @@ body {
 }
 
 .buySingle > div:last-child {
-  width: 50%;
+  width: 100%;
   padding-left: 100px;
 }
 
 .buySingle > div:last-child img {
-  width: 90%;
+  width: 100%;
   padding-left: 100px;
 }
 /* .buySingle > div:first-child{
@@ -673,7 +673,7 @@ body {
 } */
 
 .buySingle > div:first-child {
-  width: 50%;
+  width: 100%;
 }
 
 .buySingle > div:first-child > div:first-child {
@@ -681,7 +681,7 @@ body {
 }
 .buySingle > div:first-child > div:nth-child(2) {
   font-size: 40px;
-  width: 70%;
+  width: 100%;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -691,7 +691,7 @@ body {
   margin-top: 20px;
   font-size: 14px;
   color: #0f172a;
-  width: 70%;
+  width: 100%;
   line-height: 25px;
 }
 
@@ -871,24 +871,37 @@ body {
 }
 
 .oneclickbranding {
-  width: 90%;
+  width: 60%;
   margin: auto;
   margin-top: 80px;
   color: #475569;
   gap: 20px;
   margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneclickbranding div:first-child  {
+  width: 50%;
+  /* border: 1px solid; */
+  margin: auto;
 }
 
 .oneclickbranding div:first-child img {
   width: 70%;
+  margin: auto;
+  /* border: 1px solid; */
 }
 
 .oneclickbranding div:last-child {
-  width: 50%;
+  width: 40%;
+  margin: auto;
+  /* border: 1px solid; */
 }
 
 .oneclickbranding div:last-child h1 {
-  width: 60%;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
