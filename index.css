@@ -101,41 +101,53 @@ body {
 
 .secondSection {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+  
+  gap: 20px;
 }
 
 .availableOn1 {
   display: grid;
+  
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 40%;
+  width: 30%;
   margin: auto;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .availableOn2 {
   display: grid;
+  
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
+/* .availableOn1 img {
+  width: 50px;
+} */
+
+.availableOn2 img {
+  width: 50px;
+}
+
 .appStore {
-  width: 180px;
+  width: 100px;
 }
 
 .playStore {
-  width: 250px;
+  width: 150px;
 }
 
 .secondSection {
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 100px;
 }
@@ -145,6 +157,7 @@ body {
   margin: auto;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: -50px;
   font-weight: semibold;
   font-size: 22px;
   padding: 10px;
@@ -1594,9 +1607,9 @@ body {
   color: #c80b5a
 }
 
-.taxProfessional {
+/* .taxProfessional {
   width: 130px;
-}
+} */
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -1628,9 +1641,9 @@ body {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .taxProfessional {
+  /* .taxProfessional {
     width: 200px;
-  }
+  } */
 
   .trustedby span {
     font-size: 20px;
