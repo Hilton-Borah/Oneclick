@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <section class="signinMainSection">
+      <div class="firstSectionSignup">
+        <div class="carousel-container-firstSection">
+          <button
+            class="nav-button-firstSection left-firstSection"
+            onclick="prevSlide_firstSection()"
+          >
+            &#10094;
+          </button>
+          <div class="carousel-firstSection">
+            <div class="carousel-track-firstSection">
+              <img
+                src="/img/Poster1 (1).png"
+                alt="Image 1"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (2).png"
+                alt="Image 2"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (3).png"
+                alt="Image 3"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (4).png"
+                alt="Image 4"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (5).png"
+                alt="Image 5"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (1).png"
+                alt="Image 6"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (4).png"
+                alt="Image 7"
+                class="carousel-image-firstSection"
+              />
+              <img
+                src="/img/Poster1 (3).png"
+                alt="Image 8"
+                class="carousel-image-firstSection"
+              />
+            </div>
+          </div>
+          <button
+            class="nav-button-firstSection right-firstSection"
+            onclick="nextSlide_firstSection()"
+          >
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <div class="secondSectionSignup">
+        <form action="" class="inputForm">
+          <h1 class="accountSignUp">Account sign up</h1>
+          <hr style="border: 0.5px solid rgb(245, 244, 244)" />
+          <div class="inputFlex">
+            <div>
+              <label for=""> First name </label>
+              <input class="largeInput" type="text" />
+            </div>
+
+            <div>
+              <label for=""> Last name </label>
+              <input class="largeInput" type="text" />
+            </div>
+          </div>
+          <br />
+          <div>
+            <label for=""> User Email id </label><br />
+            <div class="emailotpInput">
+              <input class="largeInput" type="text" /><button
+                class="emailotpInputButton"
+              >
+                Generate otp
+              </button>
+            </div>
+          </div>
+          <br />
+          <div>
+            <label for=""> Mobile No. </label><br />
+            <input class="largeInput" type="text" />
+          </div>
+          <br />
+          <div>
+            <label for=""> Set Password </label><br />
+            <input class="largeInput" type="text" />
+          </div>
+          <br />
+          <div class="passwordError">
+            *Must contain atleast 1 number, 1 uppercase, 1 lowercase letter, at
+            least 8 or more characters
+          </div>
+          <div>
+            <label for=""> OTP </label><br />
+            <div class="emailotpInput">
+              <input class="largeInput" type="text" />
+              <button class="emailotpInputButton">Verify otp</button>
+            </div>
+          </div>
+          <div class="iUnderstand">
+            I understand that by registering on PracticeGuru, I agree to
+            the <span style="color: #2563eb"
+              ><a href="https://practiceguru.pro/DIY_Posters/terms.php"
+                >Terms and Conditions.</a
+              ></span
+            >
+          </div>
+
+          <button class="signupButton">Sign up</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="signup.js"></script>

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+.signinMainSection {
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 7%;
+    height: 100vh;
+  }
+
+
+.firstSectionSignup {
+    width: 50%;
+    height: 100%;
+    background-color: #332395;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+.secondSectionSignup {
+    width: 50%;
+    /* border: 1px solid; */
+    
+}
+
+
+.carousel-container-firstSection {
+    position: relative;
+    width: 50%;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    margin: auto;
+  }
+  
+  .carousel-firstSection {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 200px;
+  }
+  
+  .carousel-track-firstSection {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-image-firstSection {
+    min-width: 300px;
+    height: 350px;
+    margin: 0 5px;
+  }
+  
+  .nav-button-firstSection {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .nav-button-firstSection.left-firstSection {
+    margin-right: 10px;
+    margin-top: 200px;
+  }
+  
+  .nav-button-firstSection.right-firstSection {
+    margin-left: 10px;
+    margin-top: 200px;
+  }
+
+.inputForm {
+    width: 70%;
+    /* border: 1px solid; */
+    margin: auto;
+}
+
+.largeInput {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    outline: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    /* border: none; */
+}
+
+  .inputFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .passwordError {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
+  }
+ 
+  .accountSignUp {
+    margin-bottom: 20px;
+  }
+
+  .iUnderstand {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .signupButton {
+    width: 100%;
+    height: 40px;
+    background: #FDCB02;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  label{
+    font-size: 14px;
+  }
+
+  .doNotHave {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .rememberMe {
+    font-size: 14px;
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 5px;
+margin-top: 10px;
+margin-bottom: 20px;
+cursor: pointer;
+  }
