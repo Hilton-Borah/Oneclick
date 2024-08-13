@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up page</title>
-    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="verify.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <img src="/img/oneclickLogo.png" alt="OneClick Logo" class="logo" />
+      <div class="nav-links">
+        <a><div>Home</div></a>
+        <div>OneClick Branding</div>
+        <div>About Us</div>
+        <div>Pricing</div>
+        <a href="/Blog/blog.html"> <div>Blog</div></a>
+        <a href="/Signin/signin.html"><div>Log In</div></a>
+        <a href="/Signup/signup.html"><div class="startNow">Sign up</div></a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <div>Home</div>
+        <div>OneClick Branding</div>
+        <div>About Us</div>
+        <div>Pricing</div>
+        <a href="/Blog/blog.html"> <div>Blog</div></a>
+        <a href="/Signin/signin.html"><div>Log In</div></a>
+        <a href="/Signup/signup.html"><div>Sign up</div></a>
+      </div>
+    </nav>
     <section class="signinMainSection">
       <div class="firstSectionSignup">
         <div class="carousel-container-firstSection">
@@ -72,63 +96,37 @@
         <form action="" class="inputForm">
           <h1 class="accountSignUp">Account sign up</h1>
           <hr style="border: 0.5px solid rgb(245, 244, 244)" />
-          <div class="inputFlex">
-            <div>
-              <label for=""> First name </label>
-              <input class="largeInput" type="text" />
-            </div>
+          <br />
+          <div class="updateYou">
+            If you are already a member you can login with your email address and password.
+          </div>
+          <br>
+          <div>
+            <label for=""> Put Email address </label><br />
+            <input class="largeInput" type="text" />
+          </div>
+          <br />
 
-            <div>
-              <label for=""> Last name </label>
-              <input class="largeInput" type="text" />
-            </div>
-          </div>
-          <br />
-          <div>
-            <label for=""> User Email id </label><br />
-            <div class="emailotpInput">
-              <input class="largeInput" type="text" /><button
-                class="emailotpInputButton"
-              >
-                Generate otp
-              </button>
-            </div>
-          </div>
-          <br />
-          <div>
-            <label for=""> Mobile No. </label><br />
-            <input class="largeInput" type="text" />
-          </div>
-          <br />
-          <div>
-            <label for=""> Set Password </label><br />
-            <input class="largeInput" type="text" />
-          </div>
-          <br />
           <div class="passwordError">
-            *Must contain atleast 1 number, 1 uppercase, 1 lowercase letter, at
-            least 8 or more characters
+            User already exists with this Email id.
           </div>
-          <div>
-            <label for=""> OTP </label><br />
-            <div class="emailotpInput">
-              <input class="largeInput" type="text" />
-              <button class="emailotpInputButton">Verify otp</button>
-            </div>
+          <div class="updateYou">
+            Please <a style="color: rgb(166, 166, 166);" href="/Signin/signin.html">login</a> with this email id or if any issues contact us on 9136667325
           </div>
-          <div class="iUnderstand">
-            I understand that by registering on PracticeGuru, I agree to
-            the <span style="color: #2563eb"
-              ><a href="https://practiceguru.pro/DIY_Posters/terms.php"
-                >Terms and Conditions.</a
-              ></span
-            >
+         
+          <div class="passwordError2">
+            New User can be registered with this Email id.
+          </div>
+          <div class="updateYou">
+            Please click next and then check your registered email id Inbox folder for OTP.
+Please check your Spam folder if not received in Inbox Folder.
           </div>
 
           <button class="signupButton">Sign up</button>
+          <div class="doNotHave">Already have an account ? <span><a style="color: #2563EB;" href="/Signin/signin.html">Login  here </a></span></div>
         </form>
       </div>
     </section>
   </body>
 </html>
-<script src="signup.js"></script>
+<script src="/Signup/signup.js"></script>

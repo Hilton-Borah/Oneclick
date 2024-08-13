@@ -8,6 +8,86 @@
     font-family: Arial, sans-serif;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Ensure the background covers the content behind it */
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links div {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+  .mobile-nav div {
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav-links div:hover,
+  .mobile-nav div:hover {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #332395;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .startNow {
+    background: #332395;
+    border: 2px solid #c026d3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white !important;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+    .mobile-nav.active {
+      display: flex;
+    }
+  }
+
+
 .signinMainSection {
     /* width: 90%; */
     display: flex;
@@ -29,6 +109,8 @@
 
 .secondSectionSignup {
     width: 50%;
+    margin-top: 120px;
+    margin-bottom: 50px;
     /* border: 1px solid; */
     
 }
@@ -107,19 +189,32 @@
   }
 
   .passwordError {
-    font-size: 12px;
+    /* font-size: 1px; */
     color: red;
     margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .passwordError2 {
+    /* font-size: 1px; */
+    color: rgb(24, 121, 0);
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
  
   .accountSignUp {
     margin-bottom: 20px;
   }
 
-  .iUnderstand {
-    font-size: 10px;
+  .updateYou {
+    color: rgb(166, 166, 166);
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .doNotHave {
+    margin-top: 40px;
+    text-align: center;
   }
 
   .signupButton {
@@ -152,4 +247,17 @@
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
+  }
+
+  
+  @media (max-width: 768px) {
+    .firstSectionSignup {
+      display: none;
+    }
+
+    .secondSectionSignup {
+      width: 100%;
+      /* border: 1px solid; */
+      
+  }
   }

@@ -1,3 +1,12 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Your code here
+    document.getElementById('hamburger').onclick = function() {
+        document.getElementById('mobile-nav').classList.toggle('active');
+    }
+});
+
+
 let currentIndex_firstSection = 0;
 const track_firstSection = document.querySelector('.carousel-track-firstSection');
 const images_firstSection = Array.from(document.querySelectorAll('.carousel-image-firstSection'));

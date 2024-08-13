@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in page</title>
-    <link rel="stylesheet" href="signin.css" />
+    <link rel="stylesheet" href="/Signin/signin.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <img src="/img/oneclickLogo.png" alt="OneClick Logo" class="logo" />
+      <div class="nav-links">
+        <div>Home</div>
+        <div>OneClick Branding</div>
+        <div>About Us</div>
+        <div>Pricing</div>
+        <a href="/Blog/blog.html"> <div>Blog</div></a>
+        <a href="/Signin/signin.html"><div>Log In</div></a>
+        <a href="/Signup/signup.html"><div class="startNow">Sign up</div></a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <div>Home</div>
+        <div>OneClick Branding</div>
+        <div>About Us</div>
+        <div>Pricing</div>
+        <a href="/Blog/blog.html"> <div>Blog</div></a>
+        <a href="/Signin/signin.html"><div>Log In</div></a>
+        <a href="/Signup/signup.html"><div>Sign up</div></a>
+      </div>
+    </nav>
     <section class="signinMainSection">
       <div class="firstSectionSignup">
         <div class="carousel-container-firstSection">
@@ -90,10 +114,10 @@
             <div class="rememberMe"><input type="checkbox" > Remember me</div>
            
             <button class="signupButton">Login</button>
-            <div class="doNotHave">Dont have an account ? <span style="color: #2563EB;"><a href="signup.html">Sign up here</a></span></div>
+            <div class="doNotHave">Dont have an account ? <span><a style="color: #2563EB;" href="/Signup/signup.html">Sign up here</a></span></div>
         </form>
       </div>
     </section>
   </body>
 </html>
-<script src="signin.js"></script>
+<script src="/Signin/signin.js"></script>

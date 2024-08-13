@@ -1,0 +1,878 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 20px;
+  padding-bottom: 10px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Ensure the background covers the content behind it */
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* testing ---------------- */
+
+
+/* Image is hidden by default on small and medium screens */
+
+
+
+/* testing ---------- */
+
+.nav-links div {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.mobile-nav div {
+  color: rgb(255, 255, 255);
+}
+
+.nav-links div:hover,
+.mobile-nav div:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #332395;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.startNow {
+  background: #332395;
+  border: 2px solid #c026d3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white !important;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile-nav.active {
+    display: flex;
+  }
+}
+
+/* first section -------- */
+
+.firstSection {
+  height: 100vh;
+}
+
+.firstSection img {
+  height: 80vh;
+}
+
+/* mainSection ---------- */
+
+.mainSection {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  /* align-items: center; */
+  margin: auto;
+  margin-top: 100px;
+  /* border: 1px solid; */
+}
+
+.thirdSection {
+  width: 25%;
+}
+
+.thirdSectionFirst {
+
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.thirdSectionFirst p:first-of-type {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+
+.thirdSectionFirst p:nth-child(3) {
+  /* Add your styles here */
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.thirdSectionFirst p:nth-child(4) {
+  /* Add your styles here */
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 0px 10px;
+  line-height: 25px;
+}
+
+.thirdSectionFirst div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.thirdSectionFirst button:first-child {
+  background: #332395;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  border: 2px solid #332395;
+}
+
+.thirdSectionFirst button:last-child {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  margin-left: 10px;
+}
+
+.thirdSectionFirst img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* middle ad ---------- */
+
+.middlead {
+  display: none;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.middlead p:first-of-type {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+
+.middlead p:nth-child(3) {
+  /* Add your styles here */
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.middlead p:nth-child(4) {
+  /* Add your styles here */
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 0px 10px;
+  line-height: 25px;
+}
+
+.middlead div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.middlead button:first-child {
+  background: #332395;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  border: 2px solid #332395;
+}
+
+.middlead button:last-child {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  margin-left: 10px;
+}
+
+.middlead img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* middle ad------------- */
+
+/* second part ---- */
+
+.secondSection {
+  flex-grow: 1;
+  width: 60%;
+  height: 200vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.secondSection::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.bigImage {
+  width: 100%;
+}
+
+.mainHeading {
+  width: 90%;
+  color: #332395;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.smallHeading {
+  color: #332395;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.afterSmallHeading {
+  color: #332395;
+  font-size: 14px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* main blog part ------- */
+
+.mainBlogPart {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin: 5px 5px 0px 5px;
+  /* border-radius: 5px; */
+  margin-top: 20px;
+}
+
+.mainBlogPart > div:first-child {
+  width: 8%;
+}
+.mainBlogPart > div:last-child {
+  width: 90%;
+  padding-right: 50px;
+}
+
+.mainBlogPart h1 {
+  color: #332395;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mainBlogPart p {
+  line-height: 25px;
+}
+
+.h4Headers {
+  margin-bottom: 20px;
+}
+
+.joinCommunity {
+  background-color: #332395;
+  margin: 0px 5px 0px 5px;
+  padding: 50px;
+  color: white;
+}
+
+.joinCommunity p:first-child {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.joinCommunity p:nth-child(2) {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.inputSubscribe {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.inputSubscribe input {
+  width: 85%;
+  height: 50px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.inputSubscribe button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: white;
+  border: none;
+}
+
+.inputCheckbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.thirdSectionSecond img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.middleadImage img {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.thirdSectionThird {
+  color: #332395;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.thirdSectionFourth {
+  background: #332395;
+  padding: 20px;
+  color: white;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.thirdSectionFourth div {
+  width: 80%;
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thirdSectionFifth {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.thirdSectionFifth div {
+  width: 80%;
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialModia {
+  padding: 10px;
+}
+
+.socialModia img {
+  width: 20px;
+  margin-top: 10px;
+}
+
+.socialModiaShares {
+  padding: 10px;
+}
+
+.socialModiaShares div:nth-child(2) {
+  margin-bottom: 5px;
+  color: lightgray;
+}
+
+/* footer -------- */
+
+.mainFooter {
+  /* width: 93%; */
+  background-color: #332395;
+  color: white;
+}
+
+.logoPracticeguru {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.mainFooter > div:first-child {
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.mainFooter > div > div {
+  line-height: 40px;
+}
+
+.mainFooter > div > div > div:first-child {
+  font-size: 22px;
+}
+
+.footerRightPart > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerRightPartApplyGoogle {
+  width: 100px;
+}
+
+.qrCode {
+  width: 90px;
+}
+
+.copyRightLine {
+  width: 100%;
+  /* margin: 20px; */
+  border-top: 0.5px solid gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  /* padding:0px 10px 0px 10px; */
+}
+
+.iconflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fixedSection {
+  /* width: 60%; */
+  position: fixed;
+  bottom: 0;
+  left: 20%;
+  width: 60%;
+  background-color: #f8f9fa; /* Light background color */
+  padding: 40px;
+  border: 1px solid;
+  text-align: center; /* Centered text */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.closeButton {
+  display: none;
+}
+
+/* main footer ---------------------- */
+
+@media (max-width: 768px) {
+
+
+  .mainSection {
+    width: 96%;
+  }
+
+  .mainFooter > div:first-child {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .mainFooter > div > div {
+    margin-bottom: 20px;
+  }
+
+  .logoPracticeguru {
+    width: 50%;
+  }
+
+  .footerRightPart > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .footerRightPartApplyGoogle {
+    width: 70px;
+  }
+
+  .qrCode {
+    width: 60px;
+  }
+
+  .copyRightLine {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 10000; 
+  }
+  
+
+  #temporaryImage {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transition: opacity 5s ease-in-out;
+    opacity: 0;
+  }
+  
+  #temporaryImage.visible {
+    display: block;
+    opacity: 1;
+  }
+
+  #temporaryImage {
+    display: block;
+    /* position: static; */
+    background: none;
+    opacity: 1;
+  }
+  .firstSection, .thirdSectionSecond{
+    display: none;
+  }
+
+  .middleadImage img {
+    display: block;
+  }
+
+  .mainHeading {
+    font-size: 30px;
+  }
+  .smallHeading {
+    font-size: 20px;
+  }
+
+
+  .fixedSection {
+    left: 5%;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Hidden by default */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .socialModiaShares {
+    padding: 2px;
+    font-size: 12px;
+  }
+  
+  .mainBlogPart > div:last-child {
+    width: 90%;
+    padding-right: 20px;
+  }
+
+  .closeButton {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .mainBlogPart {
+    display: block;
+  }
+
+  .afterSmallHeading {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .mainBlogPart > div:last-child {
+    /* padding: 20px; */
+    padding-right: 0px;
+    margin: auto;
+  }
+
+  .socialModia {
+    width: 300px;
+    /* border: 1px solid; */
+    display: flex;
+  }
+
+  .socialModia img {
+    width: 40px;
+    margin-left: 10px;
+  }
+
+  .joinCommunity {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .joinCommunity p:first-child {
+    font-size: 22px;
+  }
+  
+  .joinCommunity p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .inputSubscribe input {
+    width: 85%;
+    height: 30px;
+    padding-left: 10px;
+  }
+  
+  .inputSubscribe button {
+    padding: 7px 10px;
+  }
+
+  .inputCheckbox {
+    font-size: 12px;
+  }
+
+  /* middle ad ----------- */
+
+  .middlead {
+    display: block;
+  }
+
+  .middlead div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .middlead button:first-child {
+    padding: 8px 20px;
+    font-size:12px;
+  }
+  
+  .middlead button:last-child {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+/* middle ad ------------- */
+
+  .thirdSectionFirst div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .thirdSectionFirst button:first-child {
+    padding: 8px 20px;
+    font-size:12px;
+  }
+  
+  .thirdSectionFirst button:last-child {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .mainSection {
+    width: 94%;
+  }
+
+  .mainFooter > div > div > div:first-child {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .mainFooter > div:first-child {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .logoPracticeguru {
+    width: 60%;
+  }
+
+  .mainFooter > div > div {
+    line-height: 25px;
+  }
+
+  .footerRightPartApplyGoogle {
+    width: 60px;
+  }
+
+  .qrCode {
+    width: 50px;
+  }
+
+  .copyRightLine {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Container for image and close button */
+#temporaryImage {
+  display: none; /* Hide by default */
+  position: fixed; /* Fixed position to stay above content */
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure it is above other content */
+  transition: opacity 1s ease-in-out; /* Adjust transition duration as needed */
+  opacity: 0; /* Initially hidden */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background to overlay content */
+}
+
+/* Close button */
+#closeButton {
+  position: absolute; /* Position relative to parent container */
+  top: 10px;
+  right: 10px; /* Adjust position to stay inside the container */
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0); /* Ensure button color contrasts with image background */
+  font-size: 2em; /* Size of the close button */
+  cursor: pointer;
+  z-index: 10000; /* Ensure it is above the image */
+}
+
+  
+  #temporaryImage.visible {
+    display: block;
+    opacity: 1;
+  }
+
+ #temporaryImage {
+      display: block;
+      /* position: static; */
+      background: none;
+      opacity: 1;
+    }
+    .firstSection ,.thirdSectionSecond{
+      display: none;
+    }
+
+    .middleadImage img {
+      display: block;
+    }
+
+  .mainHeading {
+    font-size: 25px;
+  }
+  
+  .smallHeading {
+    font-size: 16px;
+  }
+
+  .fixedSection {
+    left: 5%;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Hidden by default */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .closeButton {
+    display: flex;
+    margin-left: 50px;
+  }
+}

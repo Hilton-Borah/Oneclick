@@ -1,0 +1,60 @@
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstMainBox {
+    /* Default styles for firstMainBox */
+}
+
+.secondMainBox {
+    /* Default styles for secondMainBox */
+}
+
+
+
+@media (max-width: 768px) {
+    .firstMainBox {
+        display: none;
+    } 
+    
+    .thirdMainBox {
+        display: none;
+    }
+    
+    .secondMainBox, .thirdMainBox {
+        flex-direction: column;
+    }
+     
+    .thirdMainBox div {
+        display: none;
+    }
+    
+    .secondMainBox div {
+        position: relative;
+    }
+    
+    .secondMainBox div::after {
+        content: '';
+        display: block;
+    }
+    
+    .secondMainBox div:nth-child(1)::after {
+        content: 'Fourthefefefe';
+        display: block;
+        margin-top: 10px; /* Adjust the spacing as needed */
+    }
+    
+    .secondMainBox div:nth-child(2)::after {
+        content: 'Fifth';
+        display: block;
+        margin-top: 10px; /* Adjust the spacing as needed */
+    }
+    
+    .secondMainBox div:nth-child(3)::after {
+        content: 'Sixth';
+        display: block;
+        margin-top: 10px; /* Adjust the spacing as needed */
+    }
+}
