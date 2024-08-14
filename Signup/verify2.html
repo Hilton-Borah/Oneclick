@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in page</title>
+    <title>Sign up page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -77,6 +77,7 @@
           </button>
         </div>
       </div>
+
       <div class="container secondSectionSignup mt-5 mb-4">
         <div
         class="mb-4"
@@ -86,28 +87,45 @@
       <i class="fa-solid fa-angle-left mx-2"></i> Go back
       </div>
         <form action="" class="mx-auto w-75">
-            <h1 class="accountSignUp" style="font-weight: bold;">Login</h1>
-            <hr class="text-muted" />
+          <h1 class="accountSignUp" style="font-weight: bold;">Account sign up</h1>
+          <hr class="text-muted" />
+          <br />
+          <!-- <div class="updateYou">
+            If you are already a member you can login with your email address and password.
+          </div>
+          <br> -->
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Put Email address</label>
+            <input id="emailInput" class="form-control" type="text" />
+          </div>
+          <br />
 
-            <div style="margin-top: 20px;">
-                <label for="emailInput" class="form-label">
-                   Email address
-                </label><br>
-                <input id="emailInput" class="form-control" type="text" />
-            </div>
-            <br>
-            <div>
-                <label for="emailInput" class="form-label">
-                   Password
-                </label><br>
-                <input id="emailInput" class="form-control" type="text" />
-            </div>
-            <br>
-            <div class="rememberMe mb-4"><input type="checkbox" > Remember me</div>
-           
-            <button type="submit" class="btn btn-warning w-100 fw-bold">Login</button>
-            <div class="text-center mt-4">Dont have an account ? <span><a  class="text-primary" href="/Signup/signup.html">Sign up here</a></span></div>
+          <div class="passwordError text-danger">
+            User already exists with this Email id.
+          </div>
+          <div class="updateYou mt-2 mb-4">
+            Please <a
+              style="color: rgb(166, 166, 166)"
+              href="/Signin/signin.html"
+              >login</a
+            > with this email id or if any issues contact us on 9136667325
+          </div>
+
+          <button type="submit" class="btn btn-warning w-100 fw-bold">
+            Submit
+          </button>
+          <div class="text-center mt-4">
+            Already have an account?
+            <span>
+              <a class="text-primary" href="/Signin/signin.html">Login here</a>
+            </span>
+          </div>
         </form>
+        <div class="text-center mt-4">
+          <a href="/Signup/verify3.html"
+            ><button class="btn btn-secondary">Next</button></a
+          >
+        </div>
       </div>
     </section>
     <div id="footer-placeholder"></div>
@@ -122,4 +140,4 @@
       ></script>
   </body>
 </html>
-<script src="/Signin/signin.js"></script>
+<script src="/Signup/signup.js"></script>

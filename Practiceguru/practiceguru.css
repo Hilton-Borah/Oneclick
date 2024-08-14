@@ -1,0 +1,35 @@
+.brandTrust {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(79, 79, 79);
+}
+
+.brandTrustedImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.brandTrustedImages img {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+    .brandTrust {
+        display: block;
+        text-align: center;
+      }
+
+      .brandTrustedImages {
+       margin: auto;
+       margin-top: 20px;
+       width: 90%;
+      }
+}

@@ -1,9 +1,23 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Your code here
-    document.getElementById('hamburger').onclick = function() {
-        document.getElementById('mobile-nav').classList.toggle('active');
-    }
+    fetch('../navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+
+            // Initialize the hamburger menu functionality
+            document.getElementById('hamburger').onclick = function() {
+                document.getElementById('mobile-nav').classList.toggle('active');
+            };
+        });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
 });
 
 
@@ -61,3 +75,7 @@ const prevSlide_firstSection = () => {
 setInterval(nextSlide_firstSection, intervalTime_firstSection);
 
 updateCarousel_firstSection();
+
+function handleGoback (){
+    window.history.back();
+}
