@@ -1,35 +1,521 @@
-.brandTrust {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.welcometext {
+  width: 35%;
+}
+
+.secondText {
+  width: 70%;
+
+}
+
+.managmentBlockImage{
+  width: 20%
+}
+
+.nexusFirstSection {
+  margin-left: -70px;
+}
+
+.streamline {
+  width: 40%;
   margin: auto;
-  margin-top: 100px;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(79, 79, 79);
+  margin-left: -1px;
 }
 
-.brandTrustedImages {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
+.firstTwobutton {
+  margin-left: 80px;
 }
 
-.brandTrustedImages img {
-  width: 20%;
+.oneClickTextFirstSection {
+  margin-left: 28px;
+}
+
+.learningTextFirstSection{
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  .firstSection {
+    background-image: none !important;
+  }
+  .welcometext {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .firstBox {
+    background: #332395;
+  }
+
+  .secondText {
+    width: 90%;
+    margin: auto;
+  }
+
+  .horizonalLine {
+    margin: auto;
+  }
+
+  .managmentBlockImage{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nexusFirstSection {
+    margin: auto;
+    margin-left: 85px;
+    margin-top: -30px;
+  }
+
+  .streamline {
+    width: 80%;
+    margin-left: 35px;
+  }
+
+  .firstTwobutton {
+    margin-left: 60px;
+  }
+
+  .oneClickTextFirstSection {
+    margin-left: 5px;
+  }
+  
+  .learningTextFirstSection{
+    margin-left: 5px;
+  }
+}
+
+.boxSection {
+  width: 70%;
+  margin: auto;
+}
+
+.boxSection1 {
+  width: 80%;
+  margin: auto;
+}
+
+.boxSection2 {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .boxSection {
+    width: 100%;
+  }
+
+  .boxSection1 {
+    width: 100%;
+  }
+
+  .boxSection2 {
+    width: 100%;
+  }
+
+  .boxSectionAll {
+    margin-top: 50px;
+  }
+}
+
+.appImage {
+  width: 250px;
+}
+
+.googlePlay {
+  width: 200px;
+}
+.appStore {
+  width: 150px;
 }
 
 @media (max-width: 768px) {
-    .brandTrust {
-        display: block;
-        text-align: center;
-      }
+  .appImage {
+    width: 150px;
+  }
 
-      .brandTrustedImages {
-       margin: auto;
-       margin-top: 20px;
-       width: 90%;
-      }
+  .googlePlay {
+    width: 90px;
+  }
+  .appStore {
+    width: 70px;
+  }
+}
+
+.oneclickCrousel {
+  width: 25%;
+}
+
+.oneclickSecond {
+  width: 35%;
+}
+
+.oneclickThird {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .oneclickCrousel {
+    width: 90%;
+    margin: auto;
+  }
+  .oneclickSecond {
+    width: 100%;
+  }
+
+  .oneclickSecond p {
+    font-size: 12px;
+  }
+
+  .oneclickThird {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.wonrewardImage {
+  width: 24%;
+}
+
+@media (max-width: 768px) {
+  .wonrewardImage {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+.yourPrivacy {
+  width: 90%;
+  margin: auto;
+}
+
+.poweredBYImages {
+  width: 70%;
+}
+
+.poweredBYImages img {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .poweredBYImages {
+    width: 90%;
+  }
+
+  .poweredBYImages img {
+    width: 90%;
+  }
+}
+
+.weOffer {
+  width: 45%;
+}
+
+.weOfferImage {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .weOfferImage {
+    width: 100%;
+  }
+  .weOffer {
+    width: 100%;
+  }
+}
+
+.footerAbove {
+  width: 100%;
+  margin: auto;
+  background-color: #0f172a;
+}
+
+.footerAbove > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.footerAbove > div > div {
+  color: #facc15;
+  text-align: center;
+  line-height: 50px;
+  flex: 1 1 30%;
+  margin: 10px 0;
+}
+
+.footerAbove > div > div > div:nth-child(2) {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.footerAbove img {
+  width: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .footerAbove {
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footerAbove > div {
+    width: 100%;
+  }
+
+  .footerAbove img {
+    width: 30px;
+  }
+
+  .footerAbove > div > div > div:nth-child(2) {
+    font-size: 30px;
+  }
+
+  .footerAbove > div > div {
+    line-height: 40px;
+  }
+}
+
+.startup-section {
+  background-color: #332395;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.startup-content {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.startup-logo {
+  margin: 20px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.see-more-button {
+  background-color: #ffca28;
+  border: none;
+  padding: 10px 30px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.text-content {
+  max-width: 600px;
+  margin: 20px;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  
+  .text-content h2 {
+    font-size: 1.5em;
+  }
+
+  .text-content p {
+    font-size: 0.9em;
+  }
+
+  /* start up code -------------------- */
+
+  .startup-section {
+    display: block;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .startup-content {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  .startup-section {
+    display: block;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .startup-content {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+  }
+
+}
+
+
+
+.additionaltenpercent {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.youngCA {
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.youngCACommon {
+  width: 50%;
+  color: white;
+  padding: 20px 10px 0px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.youngCACommon img{
+  width: 40%;
+
+}
+
+.youngCA h1 {
+  width: 50%;
+}
+
+.youngCA > div:first-child {
+  background: #332395;
+}
+
+.youngCA > div:last-child {
+  background: #d7195d;
+}
+
+.flexBoxBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 480px) {
+  .additionaltenpercent {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .youngCACommon {
+    width: 90%;
+    padding:10px 5px;
+  }
+  .youngCA h1 {
+    width: 80%;
+    font-size: 20px;
+  }
+  .flexBoxBetween img {
+    width: 60%;
+    margin: 10px 0;
+  }
+
+}
+
+.carousel-container-review {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.carousel-review {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track-review {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image-review {
+  min-width: 300px;
+  height: 350px;
+  margin: 0 5px;
+}
+
+.nav-button-review {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-button-review.left-review {
+  margin-right: 10px;
+}
+
+.nav-button-review.right-review {
+  margin-left: 10px;
+}
+
+.reviewheadings {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-size: bold;
+}
+.reveiwSection {
+  background-color: #fde68a;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .reviewheadings {
+    font-size: 30px;
+  }
+
+  .carousel-image-review {
+    min-width: 200px;
+    height: 250px;
+    margin: 0 5px;
+  }
 }
