@@ -519,3 +519,32 @@
     margin: 0 5px;
   }
 }
+
+.professionalAllImages{
+  width: 50%;
+  gap: 50px;
+}
+
+.professionalLogo {
+  width: 50px;
+}
+
+.taxProfessional {
+  width: 70px;
+}
+
+@media (max-width: 480px) {
+  .professionalLogo {
+    width: 30px;
+    margin: 10px;
+  }
+  
+  .taxProfessional {
+    width: 50px;
+  }
+  .professionalAllImages{
+    width: 100%;
+    gap: 0px;
+    margin-top: 10px;
+  }
+}
